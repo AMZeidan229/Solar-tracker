@@ -25,7 +25,6 @@ vertical.attach(10);
 horizontal.write(180);
 vertical.write(45);
 delay(2500);
-Serial.begin(9600);
 }
 void loop() {
 int ld = analogRead(ldrlt); // top left
@@ -81,6 +80,4 @@ if (-1*tol > dhoriz || dhoriz > tol) // check if the diffirence is in the tolera
  }
  
  delay(dtime);
- Serial.println(ld);
-
 }
