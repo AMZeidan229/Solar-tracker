@@ -10,3 +10,14 @@ This project is an Arduino-based solar tracker that continuously adjusts the pos
 The solar tracker works by reading the values from four LDRs positioned in different directions. These sensors detect the intensity of sunlight. Based on the light readings, the Arduino adjusts the position of the servo motors to point the solar panel in the direction where the light intensity is highest.
 
 The system is designed to make fine adjustments as the sun moves throughout the day, ensuring that the solar panel stays aligned with the sun for the most efficient energy collection.
+
+## Code Overview
+The Arduino code for the solar tracker includes:
+- Reading values from the LDR sensors.
+- Calculating the difference between sensor readings to determine the direction of movement.
+- Controlling the two servo motors to adjust the solar panel's position.
+
+## Key Code Sections
+- **Sensor Input**: Reads analog input from the LDRs.
+- **Servo Control**: Adjusts the horizontal and vertical servos based on the light sensor input.
+- **Positioning Logic**: Ensures smooth and accurate tracking of the sun.
